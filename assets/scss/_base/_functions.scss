@@ -1,0 +1,15 @@
+@charset 'UTF-8';
+
+// FUNCTION: Simulate associative arrays
+// AUTHOR: Hugo Giraudel
+// SOURCE: http://hugogiraudel.com/2013/08/12/sass-functions/#mapping
+@function match($haystack, $needle) {
+  @each $item in $haystack {
+    $index: index($item, $needle);
+    @if $index {
+      $return: if($index == 1, 2, $index);
+      @return nth($item, $return);
+    }
+  }
+  @return false;
+}

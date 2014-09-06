@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+
+// 1.Config
+
+// 2.Base
+// Name: Constrained
+.l-constrained {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $prevent-spacing;
+  padding-right: $prevent-spacing;
+  width: $max-wrapper-width;
+}
+
+// Name: Clearfix
+.l-group:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+// Name: Distances
+.l-distance-small {
+  margin-top: 20px;
+}
+.l-distance-medium {
+  margin-top: 40px;
+}

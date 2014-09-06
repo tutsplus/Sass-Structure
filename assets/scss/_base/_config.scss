@@ -1,0 +1,35 @@
+@charset 'UTF-8';
+
+// Color-Scheme
+$gray-light: #f2f2f2;
+$gray: #ccc;
+$gray-dark: #7a7a7a;
+$red: #d83a3a;
+$green: #40b846;
+
+// Corporate Colors
+$corp-color: $red;
+$corp-color-dark: darken($corp-color, 10%);
+$corp-color-second: $green;
+$corp-color-second-dark: darken($corp-color-second, 10%);
+
+// Fonts
+$base-font-color: $gray-dark;
+$base-font-size: 1.8;
+$base-font-family: Helvetica, Arial, Sans-Serif;
+$breakpoints: (
+  'small' 481px,
+  'medium' 600px,
+  'large' 769px
+);
+
+// Widths & Breakpoints
+$max-wrapper-width: 1000px;
+$max-cols: 12;
+$gutter-width: 25px;
+$prevent-spacing: 20px;
+
+// Misc
+$base-border-radius: 3px;
+$rounded-border-radius: 50%;
+$base-border-color: $gray;

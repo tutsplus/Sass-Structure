@@ -1,0 +1,22 @@
+@charset 'UTF-8';
+
+// 1.Config
+// Name: Array with name and content-value
+$icons: (
+    'checkmark' 'a',
+    'minus' 'b',
+    'plus' 'c'
+);
+
+$prefix: 'icon--';
+
+// 2.Base
+// Name: Loop
+// Description: Create for each icon an own class with correct content. Configuration for icons in _config.scss.
+// Use the mixin for icon-creation which is at the top of the article
+@each $icon in $icons {
+  $name: nth($icon, 1);
+  .#{unquote($prefix)}#{$name} {
+    @include icon('before', $name);
+  }
+}
